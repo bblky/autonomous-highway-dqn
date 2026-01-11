@@ -4,6 +4,17 @@
 **Course:** Introduction to Artificial Intelligence and Expert Systems  
 **Frameworks:** Gymnasium, Highway-Env, Stable-Baselines3
 
+### 👥 Team Contribution Statement
+**Team Members:**
+Barış Balkaya (**2105157**)
+Bora Çakmak (**2201632**)
+Zelal Helin Akdoğan (**2004226**)
+
+All group members contributed **equally** to every stage of this project. We conducted regular synchronous working sessions via MS Teams to:
+* **Pair-program** the codebase and debug the issues.
+* **Monitor and tune** the training processes (optimizing for 250k steps and the parameters).
+* **Co-author** this technical report and analyze the resulting metrics.
+
 ## 1. Evolution of the Agent
 *Evolution video of the Agent starting from untrained, followed by half-trained and fully trained versions.*
 
