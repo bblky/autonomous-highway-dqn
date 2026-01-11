@@ -7,7 +7,6 @@
 ## 1. Evolution of the Agent
 *Evolution video of the Agent starting from untrained, followed by half-trained and fully trained versions.*
 
-![Evolution Video]([https://via.placeholder.com/800x400?text=Upload+Evolution+Video+Here](https://github.com/user-attachments/assets/86a8dcbc-8475-435a-8c2f-2e58233242a4)
 
 https://github.com/user-attachments/assets/86a8dcbc-8475-435a-8c2f-2e58233242a4
 
@@ -165,7 +164,8 @@ This weighted curve made higher speeds mathematically irresistible to the agent.
 **Fix:** We implemented the **`reset_num_timesteps=False`** argument in the learning function:
 `model.learn(total_timesteps=half, reset_num_timesteps=False)`
 
-![Training Curve showing dip and recovery](training_curve_4.png)
+![Training Curve showing dip and recovery]<img width="1500" height="900" alt="training_curve4" src="https://github.com/user-attachments/assets/a0857e5d-6af5-4040-bd65-35b4a91a0a7e" />
+
 
 **Outcome:** This ensured the agent retained its "memory" between training sessions, allowing the learning curve to continue upward rather than restarting.
 
