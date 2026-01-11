@@ -63,7 +63,7 @@ model = DQN(
 ### The Mathematical Reward Function
 To solve the "passive driver" problem, we engineered a custom wrapper `DenseTrafficReward`. The total reward $R_t$ at step $t$ is calculated as:
 
-$$R_t = (w_{speed} \cdot R_{speed}) - (w_{risk} \cdot R_{risk}) + R_{center} + P_{lane-change} + P_{crash}$$
+$$R_t = (w_{speed} \cdot R_{speed}) - (w_{risk} \cdot R_{risk}) + R_{center} + P_{LaneChange} + P_{crash}$$
 
 Where:
 
@@ -74,7 +74,7 @@ Where:
 3.  **Lane Centering ($R_{center}$):** A Gaussian function rewarding the agent for staying in the middle of the lane, improving stability.
 4.  **Penalties:**
     * $P_{crash} = -100$: A severe penalty to strictly forbid collisions.
-    * $P_{lane-change} = -0.05$: A minor fee to prevent unnecessary zigzagging.
+    * $P_{LaneChange} = -0.05$: A minor fee to prevent unnecessary zigzagging.
 
 ---
 
