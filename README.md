@@ -18,11 +18,6 @@ All group members contributed **equally** to every stage of this project. We con
 
 ---
 
-All group members contributed **equally** to every stage of this project. We conducted regular synchronous working sessions via MS Teams to:
-* **Pair-program** the codebase and debug the issues.
-* **Monitor and tune** the training processes (optimizing for 250k steps and the parameters).
-* **Co-author** this technical report and analyze the resulting metrics.
-
 ## 1. Evolution of the Agent
 *Evolution video of the Agent starting from untrained, followed by half-trained and fully trained versions.*
 
