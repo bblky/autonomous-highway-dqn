@@ -1,0 +1,9 @@
+# Python junk
+__pycache__/
+*.pyc
+venv/
+.env
+
+# IDE settings
+.vscode/
+.idea/
