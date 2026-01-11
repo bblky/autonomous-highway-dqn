@@ -1,6 +1,6 @@
 # Reinforcement Learning - Autonomous Highway Driving
 
-**Authors:** Barış Balkaya (2105157), Bora Çakmak (2201632), Zelal Helin Akdoğan (2004226)  
+**Authors:** Barış Balkaya (2105157), Bora Çakmak (2201632), Zelal Helin Akdoğan (2004226)   
 **Course:** Introduction to Artificial Intelligence and Expert Systems  
 **Frameworks:** Gymnasium, Highway-Env, Stable-Baselines3
 
