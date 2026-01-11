@@ -1,9 +1,9 @@
 # Reinforcement Learning - Autonomous Highway Driving
 
-**Authors:**
+**Authors:**  
 Barış Balkaya (**2105157**)  
 Bora Çakmak (**2201632**)  
-Zelal Helin Akdoğan (**2004226**)
+Zelal Helin Akdoğan (**2004226**)  
 
 **Course:** Introduction to Artificial Intelligence and Expert Systems  
 **Frameworks:** Gymnasium, Highway-Env, Stable-Baselines3
@@ -19,10 +19,7 @@ All group members contributed **equally** to every stage of this project. We con
 ## 1. Evolution of the Agent
 *Evolution video of the Agent starting from untrained, followed by half-trained and fully trained versions.*
 
-
-[Evolution Video](https://github.com/user-attachments/assets/86a8dcbc-8475-435a-8c2f-2e58233242a4)
-
-
+[Evolution Video](https://github.com/user-attachments/assets/ec9be10b-db9a-4f48-a05d-23c17c2f2fe8)
 
 ---
 
@@ -85,7 +82,7 @@ Where:
 
 The agent was trained for **250,000 timesteps**. Below is the performance analysis based on the cumulative reward per episode.
 
-<img width="1500" height="900" alt="training_curve1" src="https://github.com/user-attachments/assets/f2ffd0c8-6d3e-4cea-a6fb-866f77eb893d" />
+<img width="100%" alt="Graph showing cumulative reward per episode over 250,000 timesteps" src="https://github.com/user-attachments/assets/f2ffd0c8-6d3e-4cea-a6fb-866f77eb893d" />
 
 
 ### Commentary
@@ -178,7 +175,7 @@ This weighted curve made higher speeds mathematically irresistible to the agent.
 
 Training Curve showing dip and recovery:
 
-<img width="1500" height="900" alt="training_curve4" src="https://github.com/user-attachments/assets/a0857e5d-6af5-4040-bd65-35b4a91a0a7e" />
+<img width="100%" alt="Graph showing mid-training reset" src="https://github.com/user-attachments/assets/a0857e5d-6af5-4040-bd65-35b4a91a0a7e" />
 
 
 **Outcome:** This ensured the agent retained its "memory" between training sessions, allowing the learning curve to continue upward rather than restarting.
@@ -199,7 +196,7 @@ We initially assumed that "longer training = better driving." However, we observ
 
 Training Curve showing forgetting:
 
-<img width="1500" height="900" alt="training_curve2" src="https://github.com/user-attachments/assets/c01d1a82-84a0-41c5-8037-668178098c21" />
+<img width="100%" alt="Graph showing catastrophic forgetting" src="https://github.com/user-attachments/assets/c01d1a82-84a0-41c5-8037-668178098c21" />
 
 
 **The Diagnosis:**
