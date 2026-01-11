@@ -164,7 +164,9 @@ This weighted curve made higher speeds mathematically irresistible to the agent.
 **Fix:** We implemented the **`reset_num_timesteps=False`** argument in the learning function:
 `model.learn(total_timesteps=half, reset_num_timesteps=False)`
 
-![Training Curve showing dip and recovery]<img width="1500" height="900" alt="training_curve4" src="https://github.com/user-attachments/assets/a0857e5d-6af5-4040-bd65-35b4a91a0a7e" />
+Training Curve showing dip and recovery:
+
+<img width="1500" height="900" alt="training_curve4" src="https://github.com/user-attachments/assets/a0857e5d-6af5-4040-bd65-35b4a91a0a7e" />
 
 
 **Outcome:** This ensured the agent retained its "memory" between training sessions, allowing the learning curve to continue upward rather than restarting.
@@ -183,7 +185,10 @@ We initially assumed that "longer training = better driving." However, we observ
 * **< 250k Steps:** The model was under-trained.
 * **> 280k Steps:** The model's crash rate spiked, and reward dropped.
 
-![Training Curve showing forgetting](training_curve_4.png)
+Training Curve showing forgetting:
+
+<img width="1500" height="900" alt="training_curve2" src="https://github.com/user-attachments/assets/c01d1a82-84a0-41c5-8037-668178098c21" />
+
 
 **The Diagnosis:**
 We identified this not as standard overfitting, but as **Catastrophic Forgetting**.
