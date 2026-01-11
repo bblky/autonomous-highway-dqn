@@ -9,6 +9,10 @@
 
 ![Evolution Video Placeholder](https://via.placeholder.com/800x400?text=Upload+Evolution+Video+Here)
 
+https://github.com/user-attachments/assets/86a8dcbc-8475-435a-8c2f-2e58233242a4
+
+
+
 ---
 
 ## 2. Methodology
@@ -70,7 +74,8 @@ Where:
 
 The agent was trained for **250,000 timesteps**. Below is the performance analysis based on the cumulative reward per episode.
 
-![Training Graph Placeholder](https://via.placeholder.com/800x500?text=Upload+Reward+Graph+Here)
+<img width="1500" height="900" alt="training_curve1" src="https://github.com/user-attachments/assets/f2ffd0c8-6d3e-4cea-a6fb-866f77eb893d" />
+
 
 ### Commentary
 The learning curve demonstrates a distinct three-phase progression:
