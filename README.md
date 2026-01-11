@@ -173,9 +173,9 @@ This weighted curve made higher speeds mathematically irresistible to the agent.
 **Fix:** We implemented the **`reset_num_timesteps=False`** argument in the learning function:
 `model.learn(total_timesteps=half, reset_num_timesteps=False)`
 
-Training Curve showing dip and recovery:
+Training curve showing the dip and recovery due to the mid-training reset:
 
-<img width="100%" alt="Graph showing mid-training reset" src="https://github.com/user-attachments/assets/a0857e5d-6af5-4040-bd65-35b4a91a0a7e" />
+<img width="100%" alt="Graph showing mid-training reset bug" src="https://github.com/user-attachments/assets/a0857e5d-6af5-4040-bd65-35b4a91a0a7e" />
 
 
 **Outcome:** This ensured the agent retained its "memory" between training sessions, allowing the learning curve to continue upward rather than restarting.
@@ -194,7 +194,7 @@ We initially assumed that "longer training = better driving." However, we observ
 * **< 250k Steps:** The model was under-trained.
 * **> 280k Steps:** The model's crash rate spiked, and reward dropped.
 
-Training Curve showing forgetting:
+Training curve demonstrating catastrophic forgetting over **500,000** timesteps:
 
 <img width="100%" alt="Graph showing catastrophic forgetting" src="https://github.com/user-attachments/assets/c01d1a82-84a0-41c5-8037-668178098c21" />
 
