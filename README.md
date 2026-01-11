@@ -1,14 +1,12 @@
 # Reinforcement Learning - Autonomous Highway Driving
 
 **Authors:**
-* Barış Balkaya (**2105157**)
-* Bora Çakmak (**2201632**)
-* Zelal Helin Akdoğan (**2004226**)
+Barış Balkaya (**2105157**)  
+Bora Çakmak (**2201632**)  
+Zelal Helin Akdoğan (**2004226**)
 
 **Course:** Introduction to Artificial Intelligence and Expert Systems  
 **Frameworks:** Gymnasium, Highway-Env, Stable-Baselines3
-
----
 
 ### Team Contribution Statement
 All group members contributed **equally** to every stage of this project. We conducted regular synchronous working sessions via MS Teams to:
@@ -22,7 +20,7 @@ All group members contributed **equally** to every stage of this project. We con
 *Evolution video of the Agent starting from untrained, followed by half-trained and fully trained versions.*
 
 
-https://github.com/user-attachments/assets/86a8dcbc-8475-435a-8c2f-2e58233242a4
+[Evolution Video](https://github.com/user-attachments/assets/86a8dcbc-8475-435a-8c2f-2e58233242a4)
 
 
 
