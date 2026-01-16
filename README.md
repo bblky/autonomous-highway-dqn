@@ -5,7 +5,6 @@ Barış Balkaya (**2105157**)
 Bora Çakmak (**2201632**)  
 Zelal Helin Akdoğan (**2004226**)  
 
-**Course:** Introduction to Artificial Intelligence and Expert Systems  
 **Frameworks:** Gymnasium, Highway-Env, Stable-Baselines3
 
 ### Team Contribution Statement
@@ -59,6 +58,14 @@ model = DQN(
     tensorboard_log=LOG_DIR,
 )
 ```
+
+**Hyperparameter Justification:**
+
+* **Buffer Size (`Total Steps + 150k`):** We sized the replay buffer to be larger than the entire training duration. This ensures **zero data eviction**, meaning the agent retains access to early "crash" experiences throughout the entire training process to prevent catastrophic forgetting.
+* **Learning Starts (`15,000`):** We implemented a long "warm-up" period where the agent acts randomly without updating the network. This ensures the replay buffer is sufficiently populated with diverse samples before the first gradient descent step, preventing the model from overfitting to initial noise.
+* **Learning Rate (`1e-4`):** A lower learning rate was chosen to ensure stable convergence. Standard rates (e.g., `1e-3`) often caused the loss to oscillate, preventing the agent from mastering precise lane-centering.
+* **Gradient Steps (`4`):** We increased the gradient steps from the default (1) to 4. This forces the agent to "think harder" (perform more updates) for every interaction with the environment, improving sample efficiency.
+* **Exploration Final Epsilon (`0.05`):** We kept a residual exploration rate of 5%. This small amount of randomness prevents the agent from getting stuck in repetitive loops while ensuring it remains stable enough to maintain high speeds without "jittery" random actions causing crashes.
 
 ### The Mathematical Reward Function
 To solve the "passive driver" problem, we engineered a custom wrapper `DenseTrafficReward`. The total reward $R_t$ at step $t$ is calculated as:
